@@ -7,8 +7,8 @@
     const alertaExito = document.querySelector(".form-login .alerta-exito");
     
     const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    const passwordRegex = /^.{4,12}$/;
-    
+    const passwordRegex = /^.{8,30}$/;
+     
     const estadoValidacionCampos = {
       userEmail: false,
       userPassword: false,
@@ -25,7 +25,7 @@
       });
     
       inputPass.addEventListener("input", () => {
-        validarCampo(passwordRegex,inputPass,"La contraseña tiene que ser de 4 a 12 dígitos");
+        validarCampo(passwordRegex,inputPass,"La contraseña tiene que ser de 8 a 30 dígitos");
       });
     });
     

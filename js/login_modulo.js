@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     inputPass.addEventListener("input", () => {
-      validarCampo(passwordRegex,inputPass,"La contraseña tiene que ser de 4 a 12 dígitos");
+      validarCampo(passwordRegex,inputPass,"La contraseña tiene que ser de 8 a 30 dígitos");
     });
 });
